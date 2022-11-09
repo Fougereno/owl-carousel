@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box
+}
+    body {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    border-bottom: 1px solid black;
+}
+.header-item {
+    display: flex;
+}
+.header-inner {
+    padding: 0 18px;
+}
+.logo {
+    height: 40px;
+}
+.icons {
+    padding-right: 20px;
+} 
+.iconsitem {
+    padding: 0 10px;
+}
+.sliderpart {
+    margin: 0 auto;
+    max-width: 1236px;
+    padding: 119px 0 134px 0;
+}
+.imgwrap {
+    max-width: 396px;
+    max-height: 396px;
+}
+.slider-item {
+    max-width: 420px;
+    margin: 0 auto;
+}
+.slidermainhead {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 24px;
+}
+.sliderhead, .slidertext {
+    padding: 0 20px;
+}
+.sliderhead {
+    font-size: 22px;
+    padding-top: 17px;
+    padding-bottom: 24px;
+    line-height: 132%;
+}
+.slidertext {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.owl-prev, .owl-next {
+    border: 0;
+    background-color: transparent;
+}
+.owl-prev {
+    position: absolute;
+    top: 186px;
+    z-index: 1
+}
+.owl-next {
+    position: absolute;
+    top: 186px;
+    right: 0;
+}
+.footer {
+    background: #212A2F;
+    min-height: 821px;
+    color: white;
+    padding: 72px 54px 0 54px;
+}
+.footerlist {
+    padding-bottom: 85px;
+}
+.footerlist, .footerwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerwrap {
+    justify-content: space-between;
+}
+.ul {
+    flex-basis: 333px;
+}
+.li {
+    padding-bottom: 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.li:first-child, .footerhead {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 21px;
+}
+.footerinner {
+    max-width: 293px;
+}
+.footertext {   
+    line-height: 18px;
+    padding-bottom: 16px;
+    font-size: 12px;
+}
+.footerflags {
+    padding-right: 141px;
+    padding-bottom: 126px;
+}
+.text-center {
+    text-align: center;
+}
+@media screen and (max-width: 773px) {
+    .li:last-child {
+        padding-bottom: 30px;
+    }
+    .footerflags {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sliderhead {
+        padding-left: 10px;
+    }
+}
