@@ -3,6 +3,11 @@
 }
     body {
     font-family: 'Roboto', sans-serif;
+    color: #212A2F;
+}
+.app { 
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .header {
     display: flex;
@@ -10,13 +15,26 @@
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-    border-bottom: 1px solid black;
+    padding: 0 21px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 21px;
 }
 .header-item {
     display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.7px;
+    
 }
-.header-inner {
-    padding: 0 18px;
+.header-inner{
+    padding-right: 36px;
+    padding-top: 3px;
+}
+.header-inner:last-of-type {
+    padding-right: 0;
 }
 .logo {
     height: 40px;
@@ -24,8 +42,161 @@
 .icons {
     padding-right: 20px;
 } 
+.icon {
+    padding-left: 18px;
+}
 .iconsitem {
     padding: 0 10px;
+}
+.first-block {
+    min-height: 740px;
+    background: url("../images/background.png");
+    font-size: 16px;
+    color: white;
+}
+.first-wrap {
+    padding-left: 54px;
+    padding-bottom: 66px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.first-head {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63px;
+    padding-top: 504px;
+    padding-bottom: 11px;
+}
+.first-buttons {
+    padding-top: 24px;
+    display: flex;
+}
+.buttonwrap {
+    padding-right: 24px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    min-width: 180px;
+    padding: 17px 0 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: white;
+    cursor: pointer;
+}
+.button-black {
+    background-color: #212A2F;
+    color: #fff;
+}
+.h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 24px;
+}
+.h3 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    line-height: 29px;
+}
+.fav-h2 {
+    padding-top: 119px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    text-align: center;
+}
+.fav-h3 {
+    padding-top: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D3D4D5;
+}
+.fav-name {
+    display: flex;
+    align-items: center;
+    padding-top: 11px;
+}
+.fav-icon {
+    padding-right: 12px;
+}
+.fav-wrap {
+    margin: 0 auto;
+    display: flex;
+    max-width: 586px;
+    justify-content: space-between;
+}
+.fav-imageitems {
+    border-top: 2px solid #D3D4D5;
+    padding-top: 34px;
+    padding-bottom: 142px;
+    max-width: 1236px;
+    margin: 0 auto;
+}
+.fav-txt {
+    padding: 0 30px 0 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 24px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 500ms linear;
+}
+.fav-txt:hover {
+    border-bottom: 2px solid #000;
+}
+.fav-imageitems {
+    display: flex;
+    justify-content: space-between;
+}
+.fav-imageitem {
+    flex-basis: 396px;
+}
+.fav-imagebg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.fav-image {
+    position: relative;
+    min-height: 396px;
+    background: wheat;
+    padding: 144px 60px 0 60px;
+}
+.fav-btnwrap {
+    padding-bottom: 12px;
+    position: relative;
+    z-index: 10;
+}
+.fav-lines {
+    max-width: 336px;
+    margin: 0 auto;
+}
+.seasons {
+    text-align: center;
+}
+.seasons-h2 {
+    padding-top: 52px;
+    padding-bottom: 54px;
+}
+.seasons-txt {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.seasons-wrap {
+    display: flex;
+    justify-content: center;
+}
+.seasons-btnwrap {
+    padding: 0 12px;
 }
 .sliderpart {
     margin: 0 auto;
@@ -40,20 +211,8 @@
     max-width: 420px;
     margin: 0 auto;
 }
-.slidermainhead {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 130%;
-    padding-bottom: 24px;
-}
 .sliderhead, .slidertext {
     padding: 0 20px;
-}
-.sliderhead {
-    font-size: 22px;
-    padding-top: 17px;
-    padding-bottom: 24px;
-    line-height: 132%;
 }
 .slidertext {
     padding-top: 10px;
@@ -63,6 +222,14 @@
 .owl-prev, .owl-next {
     border: 0;
     background-color: transparent;
+}
+.owl-prev img {
+    position: absolute;
+    left: -88px;
+}
+.owl-next img {
+    position: absolute;
+    left: -0;
 }
 .owl-prev {
     position: absolute;
