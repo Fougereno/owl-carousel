@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box
 }
-    body {
+body {
     font-family: 'Roboto', sans-serif;
     color: #212A2F;
 }
@@ -44,6 +44,9 @@
 } 
 .icon {
     padding-left: 18px;
+}
+.img {
+    width: 100%;
 }
 .iconsitem {
     padding: 0 10px;
@@ -90,6 +93,13 @@
     letter-spacing: 2px;
     background: white;
     cursor: pointer;
+    transition: transform 300ms linear;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+.button:active {
+    transform: scale(1.1);
 }
 .button-black {
     background-color: #212A2F;
@@ -132,13 +142,6 @@
     max-width: 586px;
     justify-content: space-between;
 }
-.fav-imageitems {
-    border-top: 2px solid #D3D4D5;
-    padding-top: 34px;
-    padding-bottom: 142px;
-    max-width: 1236px;
-    margin: 0 auto;
-}
 .fav-txt {
     padding: 0 30px 0 30px;
     text-transform: uppercase;
@@ -153,7 +156,13 @@
 }
 .fav-imageitems {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 2px solid #D3D4D5;
+    padding-top: 34px;
+    padding-bottom: 142px;
+    max-width: 1236px;
+    margin: 0 auto;
 }
 .fav-imageitem {
     flex-basis: 396px;
@@ -198,7 +207,8 @@
 .seasons-btnwrap {
     padding: 0 12px;
 }
-.sliderpart {
+.sliders {
+    position: relative;
     margin: 0 auto;
     max-width: 1236px;
     padding: 119px 0 134px 0;
@@ -214,6 +224,9 @@
 .sliderhead, .slidertext {
     padding: 0 20px;
 }
+.sliderhead {
+    padding-top: 17px;
+}
 .slidertext {
     padding-top: 10px;
     font-size: 16px;
@@ -225,21 +238,120 @@
 }
 .owl-prev img {
     position: absolute;
-    left: -88px;
+    left: -97px;
 }
 .owl-next img {
     position: absolute;
-    left: -0;
+    left: -14px;
+}
+.owl-theme  {
+    position: relative;
 }
 .owl-prev {
     position: absolute;
-    top: 186px;
+    top: 212px;
     z-index: 1
 }
 .owl-next {
     position: absolute;
-    top: 186px;
+    top: 212px;
     right: 0;
+}
+.main-content, .arrivals, .stories {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1236px;
+    padding: 119px 0 134px 0;    
+}
+.custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+.owl-nav {
+    background: none;
+}
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+.nature, .reverse, .signup {
+    text-align: center;
+    padding-top: 44px;
+    max-width: 644px;
+    margin: 0 auto;
+}
+.nature-txt {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding-bottom: 26px;
+}
+.nature-button {
+    max-width: 384px;
+    margin: 0 auto;
+}
+.arrivals .imgwrap {
+    background: #F5F5F5;
+}
+.reverse-txt {
+    max-width: 645px;
+    padding-bottom: 26px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.reverse-button {
+    max-width: 384px;
+    margin: 0 auto;
+}
+.signup {
+    max-width: 823px;
+}
+.signup-txt {
+    padding-bottom: 50px;
+}
+.signup-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 711px;
+    margin: 0 auto;
+    padding-bottom: 23px;
+}
+.signup-button {
+    min-width: 111px;
+}
+.signup-input {
+    flex-basis: 588px;
+    border: 0;
+    border-bottom: 2px solid #212A2F;
+    padding-left: 65px;
+}
+.signup-input::placeholder {
+    opacity: .2;
+    color: #000;
+}
+.signup-links {
+    padding-bottom: 48px;
+    color: #74797C;
+}
+.signup-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-shadow 200ms linear;
+}
+.signup-link:hover {
+    text-shadow: 1px 1px #74797C;
 }
 .footer {
     background: #212A2F;
@@ -286,6 +398,20 @@
 }
 .text-center {
     text-align: center;
+}
+@media screen and (max-width: 1440px){
+    .owl-controls {
+        display: none;
+    }
+}
+@media screen and (max-width: 1270px){
+    .h2 {
+        padding-left: 20px;
+    }
+    .fav-imageitems {
+        justify-content: center;
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 773px) {
     .li:last-child {
