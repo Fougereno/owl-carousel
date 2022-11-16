@@ -453,5 +453,9 @@ body {
     }
     .seasons-wrap {
         flex-wrap: wrap;
+        gap: 20px;
+    }
+    .fav-lines {
+        padding-left: 20px;
     }
 }
