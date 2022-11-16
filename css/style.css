@@ -73,7 +73,9 @@ body {
 }
 .first-buttons {
     padding-top: 24px;
+    gap: 24px;
     display: flex;
+    flex-wrap: wrap;
 }
 .buttonwrap {
     padding-right: 24px;
@@ -139,6 +141,7 @@ body {
 .fav-wrap {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     max-width: 586px;
     justify-content: space-between;
 }
@@ -169,6 +172,7 @@ body {
 }
 .fav-imagebg {
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 0;
@@ -176,7 +180,6 @@ body {
 .fav-image {
     position: relative;
     min-height: 396px;
-    background: wheat;
     padding: 144px 60px 0 60px;
 }
 .fav-btnwrap {
@@ -235,14 +238,19 @@ body {
 .owl-prev, .owl-next {
     border: 0;
     background-color: transparent;
+    position: absolute;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
 }
 .owl-prev img {
     position: absolute;
-    left: -97px;
+    left: -94px;
 }
 .owl-next img {
     position: absolute;
-    left: -14px;
+    left: -20px;
 }
 .owl-theme  {
     position: relative;
@@ -250,6 +258,7 @@ body {
 .owl-prev {
     position: absolute;
     top: 212px;
+    left: 0;
     z-index: 1
 }
 .owl-next {
@@ -263,28 +272,14 @@ body {
     max-width: 1236px;
     padding: 119px 0 134px 0;    
 }
-.custom-nav {
+.custom-nav, .arrivals-nav, .stories-nav {
     position: absolute;
     top: 20%;
     left: 0;
     right: 0;
 }
-.owl-prev, .owl-next {
-    position: absolute;
-    color: inherit;
-    background: none;
-    border: none;
-    z-index: 100;
-}
 .owl-nav {
     background: none;
-}
-.owl-prev {
-    left: 0;
-}
-
-.owl-next {
-    right: 0;
 }
 .nature, .reverse, .signup {
     text-align: center;
@@ -335,6 +330,7 @@ body {
     border: 0;
     border-bottom: 2px solid #212A2F;
     padding-left: 65px;
+    min-height: 48px;
 }
 .signup-input::placeholder {
     opacity: .2;
@@ -412,17 +408,43 @@ body {
         justify-content: center;
         gap: 20px;
     }
+    .header-item {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .icons {
+        flex-basis: 100%;
+    }
+    .icon {
+        padding: 20px 0;
+    }
 }
 @media screen and (max-width: 773px) {
     .li:last-child {
         padding-bottom: 30px;
     }
+    .signup-form {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .signup-button, .signup-input {
+        flex-basis: 100%;
+    }
     .footerflags {
         padding-right: 0;
     }
+
 }
 @media screen and (max-width: 400px) {
     .sliderhead {
         padding-left: 10px;
+    }
+    .fav-wrap {
+        justify-content: center;
+    }
+    .seasons-wrap {
+        flex-wrap: wrap;
     }
 }
