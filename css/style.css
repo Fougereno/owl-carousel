@@ -422,6 +422,13 @@ body {
     }
 }
 @media screen and (max-width: 773px) {
+    .first-wrap {
+        padding-left: 30px;
+    }
+    .first-head {
+        font-size: 30px;
+        line-height: 46px;
+    }
     .li:last-child {
         padding-bottom: 30px;
     }
